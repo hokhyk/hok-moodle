@@ -5,7 +5,10 @@ $ git branch -a                                                   (2)
 $ git branch --track MOODLE_34_STABLE origin/MOODLE_34_STABLE     (3)
 $ git checkout MOODLE_34_STABLE                                   (4)
 
+
 admin/Admin@moodle.1
+hokhyk/12345!qA
+
 
 
 there are three other settings that limit the size of a file that can be uploaded to your server. The first two are PHP settings and the third is an Apache setting. To see the PHP settings on your server, go to Site Administration | Server | PHP info. Scroll down until you see post_max_size and upload_max_filesize.
