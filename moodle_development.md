@@ -48,3 +48,28 @@ $require_capability('moodle/course:view', $context);
         error('You do not have the correct permissions');
 }
 
+
+# translation
+Now that the language file is created, a new string can be added to Moodle for the block using something like the sample code below--replacing the 'name of the string' with a valid PHP array key and the 'Text for the string' with a PHP string:
+
+$string['name of the string'] = 'Text for the string';
+Practice by adding the line below to your block_simplehtml.php file.
+
+$string['blockname'] = 'Simple HTML Block';
+To retrieve this string within the block you would use the Moodle function get_string() found in lib/moodlelib.php. To get the title string into a variable use:
+
+$this->title = get_string('blockname', 'block_simplehtml');
+
+
+# xmldb editor
+If it has no create ability, check whether you have write access to the moodle source files.
+$groups www
+$groups vagrant
+$gpasswd -a vagrant www
+$sudo chmod g+w moodle/ -R
+
+
+# moodle form definition API
+https://docs.moodle.org/dev/lib/formslib.php_Form_Definition
+
+
